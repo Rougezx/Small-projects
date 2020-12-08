@@ -1,0 +1,12 @@
+import sys
+import os
+from PIL import Image
+image_input=sys.argv[1]
+image_output=sys.argv[2]
+if not os.path.exists(image_output):
+	os.makedirs(image_output)
+for filename in os.listdir(image_input):
+	img=Image.open(f'{image_input}/{filename}')
+	clean=os.path.splitext(filename)[0]
+	img.save(f'{image_output}/{clean}.png','png')
+	print("all done!")
