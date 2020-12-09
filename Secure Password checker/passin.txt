@@ -1,0 +1,2 @@
+Here you must type the passwords you want to check so instead of using a sys command that is less secure, this can be deleted anytime.
+Note: use any txt file remember to name that in if __name__ == '__main__': also remove all these and just enter your password alone and delete the text file after use.
